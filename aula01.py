@@ -4,21 +4,21 @@ import matplotlib.pyplot as plt
 
 def exibirGrafico():
     # Definição dos grupos e valores
-    grupos = ['A', 'B', 'C']
-    valores = [23, 38, 12]
+    filmes = ['Filme A', ' Filme B', 'Filme C', 'Filme D', 'Filme E']
+    notas = [7.8, 8.2, 6.9, 8.5, 7.3 ]
 
     # Configura um gráfico de barras, onde recebe os grupos, valores
     # E opcionalmente as cores
-    plt.bar(grupos, valores, color=['red', 'blue', 'grey'])
+    plt.bar(filmes, notas, color=['darkred', 'darkgreen', 'darkblue', 'darkorange', 'darkviolet'])
 
     # Define o título do gráfico
-    plt.title('Gráfico de Barras Simples')
+    plt.title('Grupo 6- Avaliação de filmes')
 
     # Define o título do eixo X
-    plt.xlabel('Grupos')
+    plt.xlabel('Filme')
 
     #defini o titulo do eixo y
-    plt.ylabel('Valores')
+    plt.ylabel('Notas')
 
     #cria o gráfico
     plt.show()
