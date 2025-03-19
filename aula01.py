@@ -3,12 +3,25 @@
 import matplotlib.pyplot as plt
 
 def exibirGrafico():
-    
-    cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Porto Alegre', 'Curitiba']
-    populacao = [12300, 6700, 2800, 1500, 1940]
-    
-    plt.bar(cidades, populacao, color=['red', 'blue', 'grey'])
-    plt.title('grafico de barra simples')
-    plt.xlabel('cidades')
+    # Definição dos grupos e valores
+    grupos = ['A', 'B', 'C']
+    valores = [23, 38, 12]
+
+    # Configura um gráfico de barras, onde recebe os grupos, valores
+    # E opcionalmente as cores
+    plt.bar(grupos, valores, color=['red', 'blue', 'grey'])
+
+    # Define o título do gráfico
+    plt.title('Gráfico de Barras Simples')
+
+    # Define o título do eixo X
+    plt.xlabel('Grupos')
+
+    #defini o titulo do eixo y
+    plt.ylabel('Valores')
+
+    #cria o gráfico
     plt.show()
+
+    #salva dentro do arquivo de imagen
     plt.savefig('chart.png')
